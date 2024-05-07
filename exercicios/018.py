@@ -1,4 +1,7 @@
 import math
 
-num = int(input('Digite um número: '))
-print('O ângulo {} tem o valor {} do seno, {} do cosseno e {} da tangente'.format(num, math.asin(num), math.acos(num), math.atan(num)))
+angulo = int(input('Digite o angulo: '))
+seno = math.sin(math.radians(angulo))
+cosseno = math.cos(math.radians(angulo))
+tangete = math.tan(math.radians(angulo))
+print('O ângulo {} tem o valor {:.2f} do seno, {:.2f} do cosseno e {:.2f } da tangente'.format(angulo, seno, cosseno, tangete))
